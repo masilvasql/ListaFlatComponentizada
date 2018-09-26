@@ -17,5 +17,13 @@ export default StyleSheet.create({
         padding: 10,
         backgroundColor:'#34495e',
         elevation:30
+    },
+    card2:{
+        borderWidth: 2,
+        borderColor: 'black',
+        width:'100%',
+        padding: 10,
+        backgroundColor:'#4834d4',
+        elevation:30
     }
 })

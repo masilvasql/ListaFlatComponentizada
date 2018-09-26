@@ -6,13 +6,13 @@ import estiloLista from '../estilo/estiloLista'
 export default props => {
 
     const renderItem = ({ item }) => {
+        
         return (
             <View style={estiloLista.alinhamento}>
-                <View style={estiloLista.card}>
+                <View style={parseInt(item.Id) % 2 == 0 ? estiloLista.card : estiloLista.card2}>
                     <Text style={estiloLista.fonte}>Id: {item.Id}</Text>
                     <Text style={estiloLista.fonte}>Nome: {item.nome}</Text>
                 </View>
-
             </View>
         )
     }
